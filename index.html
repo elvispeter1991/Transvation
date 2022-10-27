@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <style>
+      html, body {position: relative; margin: 0; width: 100%; height: 100%; overflow: hidden;}
+      #ar-div{
+          width:1200px;
+          height:1600px;
+          visibility:hidden;
+          
+          
+          background: transparent;
+          opacity: 0.9f;
+          font-size: 100px;
+          display: inline-flex;
+          align-items:flex-start;
+          color:transparent;
+          font-weight:bold;
+          text-decoration: none;
+          border: none;
+          position:absolute;
+          
+          
+         
+          
+      }
+      
+    
+    </style>
+  </head>
+  <body>
+     
+   
+        <button id="ar-div" class="GFG">
+            CLICK HERE TO RSVP NOW
+        </button>
+    
+     <script src="./main.js" type="module"></script>
+     <script src="libs/mindar/mindar-image-three.prod.js"></script>
+     <script>
+         var oneSecond= 1000;
+         var tenMinutes = oneSecond * 84;
+
+setTimeout(function() {
+  const x = document.getElementById("ar-div");
+ 
+  x.addEventListener("click", function () {
+    window.open("https://forms.gle/3sRR8cvYHjoeEz7H9");
+ });
+  x.style.color = "lightblue";
+  
+  }, tenMinutes);
+ 
+     </script>
+    
+  </body>
+</html>
