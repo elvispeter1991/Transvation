@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
    const el = document.getElementById("container");
 
-    const video = await loadVideo("https://alphareality.000webhostapp.com/webARVideo/Transavation-Final.mp4");
+    const video = await loadVideo("Transavation-Final.mp4");
     const texture = new THREE.VideoTexture(video);
 
     const geometry = new THREE.PlaneGeometry(1, 900/450);
